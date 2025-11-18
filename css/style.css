@@ -1,0 +1,338 @@
+:root {
+    --primary: #E06B80 ;
+    --bg: #FFEDFA;
+    --bg1: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+body{
+    font-family:"Work Sans", sans-serif;
+    background-color: var(--bg1);
+    color: var(--bg1) ;
+}
+
+/* navbar 1*/
+.navbar1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #fff ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar1 a{
+    color: #E06B80;
+    /* text-shadow: 1px 1px 2px rgb(82, 82, 82); */
+}
+.navbar1 span{
+    color: #E06B80;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 3rem ;
+    background-color: #E06B80;
+    padding: 1.4rem 7%;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar2 a{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.navbar2 a:hover{
+    color: #fff;
+}
+
+/* navbar active */
+.navbar2 a.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.wrapper img {
+    flex: 0 0 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* === Tombol Navigasi === */
+.nav-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Posisi tombol kiri dan kanan */
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+    .nav-btn {
+            width: 40px;
+            height: 40px;
+            font-size: 1.5rem;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+     }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+
+/* Tentang Kami Section */
+.history {
+    padding: 5rem 7% 1.4rem;
+}
+
+.history h2 {
+    color: #E06B80;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+
+.history .history-row {
+    display: flex;
+}
+
+.history .history-row .history-img{
+    flex: 1 1 45rem;
+}
+
+.history .history-row .history-img img{
+    width: 100%;
+}
+
+.history .history-row .history-content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    color: #000;
+}
+
+.history .history-row .history-content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.history .history-row .history-content p{
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.history-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.history .btn-cek{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 3rem;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    color: #fff;
+    width: fit-content;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.history .btn-cek:hover{
+    background-color: #FFC4C4
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 2.5rem 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/* Tulisan paling atas */
+footer .footer-title{
+    font-size: 1.4rem;     
+    font-weight: 600;
+    color: #fff;        
+    margin-bottom: 0.5rem; 
+}
+
+/* Created by */
+footer .credit{
+    font-size: 1.1rem;      
+    color: #fff;
+}
+
+footer .credit a{
+    color: #000;
+    font-weight: 700;
+}
+
+
+/* WISH */
+.hero-blog{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('/img/mitha13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+.hero-blog .content-blog {
+    padding: 1.4rem 7%;
+    max-width: 90rem;
+}
+
+.hero-blog .content-blog h1 {
+    font-size: 10rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 80px;
+    margin-top: 20px; /* tambahan penting */
+}
+
+.card {
+    background-color: var(--primary);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card h3{
+    color: #fff;
+} 
+.card p {
+    color: #fff;
+}
+
+
+/* GALERI */
+
+.gallery{
+    padding: 10px;
+    padding-top: 170px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+.v-stretch{
+    grid-row: span 2;
+}
+
+.h-stretch{
+    grid-column: span 2;
+}
+
+.big-stretch{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+

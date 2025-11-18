@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <!-- navbar start 1 -->
+    <nav class="navbar1">
+        <a href="" class="navbar1-logo">
+            Happy Birthday <hr>
+            <span>Sayang</span>
+        </a>
+    </nav>
+
+    <!-- navbar start 2 -->
+     <nav class="navbar2">
+        <a href="core.html"> Home </a>
+        <a href="wish.html"> Wish For You </a>
+        <a href="galeri.html"> Photos </a>
+     </nav>
+
+
+
+    <script src="./js/core.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- section sejarah -->
+    <section id="history" class="history">
+        <div class="history-row">
+            <div class="history-img">
+                <img src="./img/remaja.png" alt="" class="bingkai">
+            </div>
+            
+            <div class="history-content">
+                <h3>
+                    Bayi Itu Menjadi Remaja Hebat
+                </h3>
+                <p>
+                   
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section sejarah foto di kanan -->
+    <section id="history" class="history">
+        <div class="history-row reverse">
+            <div class="history-img">
+                <img src="./img/fakocil.png" alt="" class="bingkai">
+            </div>
+            
+            <div class="history-content">
+                <h3>
+                    Bayi Itu Selalu Membanggkan
+                </h3>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </section>

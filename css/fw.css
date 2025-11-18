@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background: #000000;
+    overflow: hidden;
+    font-family: "Work Sans", sans-serif;
+}
+
+.tulisan {
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+    text-align: center;
+    width: 95%; 
+}
+
+/* Ini adalah kursor '|' yang berkedip di sebelah kanan teks */
+.tulisan::after {
+  content: '|'; /* Karakter kursor */
+  margin-left: 5px; /* Jarak dari huruf terakhir */
+  animation: blink 0.7s infinite; /* Animasi berkedip */
+}
+
+/* Jika sudah selesai mengetik (kelas 'selesai-ketik' ditambahkan oleh JS) */
+.tulisan.selesai-ketik::after {
+  content: ''; /* Hilangkan kursor */
+  animation: none; /* Hentikan animasi */
+}
+
+/* Definisi animasi berkedip */
+    @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#nextButton {
+    opacity: 0;
+    visibility: hidden;
+    
+    /* 2. Efek transisi saat muncul (fade-in) */
+    transition: opacity 1s ease-in-out; /* Muncul perlahan selama 1 detik */
+
+    /* 3. Atur Posisi */
+    position: absolute;
+    top: 70%; /* Sedikit di bawah teks H1 (yang 50%) */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Pastikan di atas canvas */
+
+    /* 4. Styling (sesuaikan selera Anda) */
+    background: transparent;
+    font-weight: 700;
+    border: 3px solid aliceblue;
+    color: aliceblue;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Aturan ini akan dipakai oleh JavaScript */
+#nextButton.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* (Opsional) Efek saat kursor di atas tombol */
+#nextButton:hover {
+  background: aliceblue;
+  color: #000;
+}
+
